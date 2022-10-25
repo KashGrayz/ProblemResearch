@@ -16,4 +16,4 @@ favorite_num = 93
 random_number = random.randrange(93)
 
 fav_diff = difference_cal(random_number, favorite_num)
-print(f' The difference is {fav_diff} ')
+print(f' The difference is {abs(fav_diff)} ')
