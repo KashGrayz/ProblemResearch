@@ -8,12 +8,29 @@
 import random
 
 
-def difference_cal(rand_num, fav_num):
-    cal = int(rand_num) - int(fav_num)
-    return cal
+# def difference_cal(rand_num, fav_num):
+#     cal = int(rand_num) - int(fav_num)
+#     return cal
 
-favorite_num = 93
-random_number = random.randrange(93)
+# favorite_num = 93
+# random_number = random.randrange(93)
 
-fav_diff = difference_cal(random_number, favorite_num)
-print(f' The difference is {abs(fav_diff)} ')
+# fav_diff = difference_cal(random_number, favorite_num)
+# print(f' The difference is {abs(fav_diff)} ')
+
+
+
+
+
+fav_num = 93
+
+tries = 0
+
+random_number = int()
+
+while random_number != fav_num:
+    random_number = random.randint(1,93)
+    tries += 1 
+    print("re-rolling..")
+    if random_number == fav_num:
+        print(f' It took {tries} rolls to find your {fav_num}')
