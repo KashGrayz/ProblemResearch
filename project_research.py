@@ -74,10 +74,15 @@ palindrome = input("Is it a palindrome?\n")
 
 answer = ''
 
-for drome in palindrome:
-    answer = drome + answer
+for drome in range(len(palindrome) -1, -1, -1):
+    answer += palindrome[drome]
 
 if answer == palindrome:
-    print("Succes")
+     print("Succes")
 else:
     print("Fail!")
+
+#Compress a string of characters
+# For example, an input of "aaabbbbbccccaacccbbbaaabbbaaa" would compress to "3a5b4c2a3c3b3a3b3a"
+
+# condense_this = input("What would you like to condense?\n")
