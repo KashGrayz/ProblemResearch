@@ -9,7 +9,7 @@
 
 from operator import index
 import random
-
+import string
 #Favorite number
 #favorite_num = 93 // 
 
@@ -44,10 +44,40 @@ import random
 # Write code that takes a string as input and returns the string reversed
 #i.e. “Hello” will be returned as “olleH”
 
-words = input("What's the word?\n")
-drow_ver = ''
+#Word reverserizor
+# words = input("What's the word?\n")
+# drow_ver = ''
 
-for drow in range(len(words) -1, -1, -1):
-    drow_ver += words[drow]
-print(drow_ver)
+# for drow in range(len(words) -1, -1, -1):
+#     drow_ver += words[drow]
+# print(drow_ver)
 
+# Write code that takes a string as input and 
+# capitalize the first letter of each word. Words will be separated by only one space. 
+# i.e. “hello world” should be outputted as “Hello World”
+
+# Cap my words
+# cap_my_word = input("Cap what?\n")
+# result = string.capwords(cap_my_word)
+# print(result)
+
+# cap_my_word2 = input("Cap what?\n")
+# first_l = cap_my_word2[0]
+# rest_l = cap_my_word2[1:]
+# result = first_l.upper() + rest_l
+# print(result)
+
+# A “palindrome” is a word, phrase, or sequence that reads the same backward as forward i.e. madam	
+# Write code that takes a user input and checks to see if it is a Palindrome and reports the result
+
+palindrome = input("Is it a palindrome?\n")
+
+answer = ''
+
+for drome in palindrome:
+    answer = drome + answer
+
+if answer == palindrome:
+    print("Succes")
+else:
+    print("Fail!")
