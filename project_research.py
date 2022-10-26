@@ -61,7 +61,7 @@ import string
 # result = string.capwords(cap_my_word)
 # print(result)
 
-# cap_my_word2 = input("Cap what?\n")
+# cap_my_word2 = input("Cap what?\n") #second try at it, unsucessful.
 # first_l = cap_my_word2[0]
 # rest_l = cap_my_word2[1:]
 # result = first_l.upper() + rest_l
@@ -70,19 +70,62 @@ import string
 # A “palindrome” is a word, phrase, or sequence that reads the same backward as forward i.e. madam	
 # Write code that takes a user input and checks to see if it is a Palindrome and reports the result
 
-palindrome = input("Is it a palindrome?\n")
+# Palindrome checker
 
-answer = ''
+# palindrome = input("Is it a palindrome?\n")
 
-for drome in range(len(palindrome) -1, -1, -1):
-    answer += palindrome[drome]
+# answer = ''
 
-if answer == palindrome:
-     print("Succes")
-else:
-    print("Fail!")
+# for drome in range(len(palindrome) -1, -1, -1): #checks the word in the reverse
+#     answer += palindrome[drome]
+
+# if answer == palindrome:
+#      print("Succes")
+# else:
+#     print("Fail!")
 
 #Compress a string of characters
 # For example, an input of "aaabbbbbccccaacccbbbaaabbbaaa" would compress to "3a5b4c2a3c3b3a3b3a"
 
 # condense_this = input("What would you like to condense?\n")
+
+# answer = ""
+
+# number = 1
+# for this in range(len(condense_this)-1):
+#     if answer[this] = answer[this+1]:
+#         number = number + 1
+
+# Happy Numbers
+
+# A happy number is a number defined by the following process: starting with any positive integer, 
+# replace the number by the sum of the squares of its digits, 
+# and repeat the process until the number equals 1. 
+# An example of a happy number is 19
+
+#  def happy_number(HN): #funtion to calculate input number
+#     #number = add = 0
+#     while (number > 0):
+#         number = HN % 10
+#         add = add + (number * number)
+#         HN = HN / 10
+#     return add
+
+# sad_number = int(input)
+
+# A prime number is a number that is only divisible by one and itself.
+# Write a method that prints out all prime numbers between 1 and 100 
+
+prime_numbers = 100
+
+print("The prime numbers are:\n")
+
+for num in range(1,prime_numbers+1):
+    if num > 1:
+        for p in range(2,num):
+            if (num % p) ==0:
+                break
+            else:
+                print(num)
+
+    
