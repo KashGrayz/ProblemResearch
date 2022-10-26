@@ -1,10 +1,3 @@
 # ProblemResearch
 
-# 1. Declare a variable called favorite_number and store your favorite or lucky number within it. 
-  # Use the random module to generate a random number between a range that includes your favorite number.
-
-# 2. Determine how many numbers away the random number was from your favorite number
-
-# 3. Create a while loop that generates a random number and checks if it matches your favorite number.
-  # Keep track of how many times the computer has guessed.
-  # Once the computer guesses the correct number, display a message explaining how many attempts it took the computer
+In both data analytics and software development, there is a need for online research and exploration. Often the need for online research will arise from a problem that appears and is keeping you from your desired solution or end goal. To become an efficient data analyst or software engineer, you will need to practice good research habits and judgment.
