@@ -116,16 +116,16 @@ import string
 # A prime number is a number that is only divisible by one and itself.
 # Write a method that prints out all prime numbers between 1 and 100 
 
-prime_numbers = 100
+prime_numbers = int(input("Enter a number to list the primes:\n"))
 
 print("The prime numbers are:\n")
 
-for num in range(1,prime_numbers+1):
+for num in range(0, prime_numbers +1):
     if num > 1:
         for p in range(2,num):
-            if (num % p) ==0:
-                break
-            else:
-                print(num)
+            if (num % p)==0:
+             break
+        else:
+            print(num)
 
     
