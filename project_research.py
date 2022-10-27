@@ -1,4 +1,4 @@
-#PROBLEM SOLVING I
+#PROBLEM SOLVING I //
 
 # Declare a variable called favorite_number and store your favorite or lucky number within it. 
 # Use the random module to generate a random number between a range that includes your favorite number.
@@ -39,7 +39,7 @@ import string
 #     if random_number == fav_num:
 #         print(f' It took {tries} rolls to find your {fav_num}')
 
-#PROBLEM SOLVING II
+#PROBLEM SOLVING II //
 
 # Write code that takes a string as input and returns the string reversed
 #i.e. “Hello” will be returned as “olleH”
@@ -96,6 +96,8 @@ import string
 #     if answer[this] = answer[this+1]:
 #         number = number + 1
 
+#PROBLEM SOLVING III //
+
 # Happy Numbers
 
 # A happy number is a number defined by the following process: starting with any positive integer, 
@@ -116,11 +118,13 @@ import string
 # A prime number is a number that is only divisible by one and itself.
 # Write a method that prints out all prime numbers between 1 and 100 
 
-prime_numbers = int(input("Enter a number to list the primes:\n"))
+# List of prime numbers
+
+prime_numbers = int(input("Enter a number to list the primes:\n")) #input a number
 
 print("The prime numbers are:\n")
 
-for num in range(0, prime_numbers +1):
+for num in range(0, prime_numbers +1): # calculate if divisible by 1 and self
     if num > 1:
         for p in range(2,num):
             if (num % p)==0:
@@ -128,4 +132,16 @@ for num in range(0, prime_numbers +1):
         else:
             print(num)
 
-    
+#     Fibonacci
+# A series of numbers in which each number (Fibonacci number) is the sum of the two preceding numbers. 
+# The simplest is the series 1, 1, 2, 3, 5, 8, etc.
+# Write a method that does the Fibonacci sequence starting at 1
+
+fibo_num = int(input("What do you want to Golden Ratio?\n"))
+
+for num in range(0 , fibo_num):
+    if num > fibo_num:
+        for g in range(2,fibo_num):
+            if (num == g):
+                
+                
